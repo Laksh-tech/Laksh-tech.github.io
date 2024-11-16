@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Other head elements -->
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  
+  <title>Portfolio - Lakshya</title>
+  <style>
+    /* General Styles */
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cinzel', serif;
+      color: #eaeaea;
+    }
+    body {
+      background-color: #1b1b1b;
+      color: #eaeaea;
+      overflow-x: hidden;
+    }
+    a {
+      text-decoration: none;
+      color: #eaeaea;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #ff4a4a;
+    }
+
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      background-color: #121212;
+      border-bottom: 2px solid #ff0000;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 5px;
+      color: #ecebf6;
+    }
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+    nav a {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('./images/bg.jpg');
+ /* Add intense battlefield-like background */
+      background-size: cover;
+ /* Fallback color */
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ff4a4a;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+    .hero p {
+      margin: 25px 0;
+      color : #fbfbfb;
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+    .hero .cta-btn {
+      padding: 15px 40px;
+      border: 4px double #fefcff;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .hero .cta-btn:hover {
+      background-color: #00fbff;
+      color: #121212;
+    }
+
+    /* Portfolio Section */
+    .portfolio {
+      padding: 50px 5%;
+      background-color: #121212;
+    }
+    .portfolio h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ff4a4a;
+      text-transform: uppercase;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #ff4a4a;
+      border-radius: 10px;
+    }
+    .portfolio-item img {
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+    .portfolio-item:hover img {
+      transform: scale(1.1);
+    }
+    .portfolio-item h3 {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 1.5rem;
+      color: #ff4a4a;
+      text-shadow: 0 0 5px rgba(0,0,0,0.8);
+    }
+
+    /* About Section */
+    .about {
+      padding: 50px 5%;
+      text-align: center;
+      background-color: #1b1b1b;
+    }
+    .about h2 {
+      font-size: 3rem;
+      color: #ff4a4a;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.2rem;
+      color: #d2d2d2;
+      line-height: 1.6;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 50px 5%;
+      background-color: #121212;
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: 3rem;
+      color: #ff4a4a;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    .contact a {
+      font-size: 1.2rem;
+      padding: 10px 30px;
+      border: 2px solid #ff4a4a;
+      transition: all 0.3s ease;
+    }
+    .contact a:hover {
+      background-color: #ff4a4a;
+      color: #121212;
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px 5%;
+      background-color: #101010;
+      text-align: center;
+      color: #999;
+      font-size: 0.9rem;
+    }
+    footer p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Lakshya</div>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Enter the Abyss of Innovation</h1>
+    <p>Explore my world of technology, creativity, and engineering crafted with passion and a fearless approach.</p>
+    <a href="#portfolio" class="cta-btn">Explore</a>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <h2>Works of the Abyss</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project Title 1</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="project3.jpg" alt="Project 3">
+        <h3>Project Title 3</h3>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I’m Lakshya, a relentless innovator in the tech realm, with a passion for fusing data science, AI, and hardware to create something extraordinary. From robotics to creative AI, my work is rooted in pushing boundaries and delivering immersive experiences. Join me on my journey to shape the future of technology.</p>
+  </section>
+
+  <!-- Contact Section -->
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="social-links">
+      <a href="mailto:laksh.sk108@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/android_hxh/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Laksh-tech" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="www.linkedin.com/in/laksh-singh-kushwah-842b77328" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+  
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Lakshya | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
